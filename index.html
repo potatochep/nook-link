@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nook-link-style.css" />
+    <title>Welcome to Nook link</title>
+  </head>
+  <body class="login-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Serivce</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>25%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="Welcome-header">
+      <h1 class="Welcome-header__title">Welcome to Nook link</h1>
+      <p class="Welcome-header__paragraph">
+        If you have Nook link Account, log in with your email or phone number
+      </p>
+    </header>
+
+    <div>
+      <form action="friends.html" method="get" class="login-form">
+        <input type="email" placeholder="Please enter your Email" required />
+        <input type="password" placeholder="Password" minlength="10" required />
+        <div class="login-form__btn">
+          <input type="submit" value="Log in" />
+        </div>
+      </form>
+      <form action="sign-up.html" method="get" class="login-form">
+        <div class="login-form__btn">
+          <input type="submit" value="Sign up" />
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/b1038de99e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
