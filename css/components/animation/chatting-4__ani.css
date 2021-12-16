@@ -25,7 +25,7 @@
 
 .message-row:nth-child(6) {
   visibility: hidden;
-  animation: comeIn-left 0.8s linear;
+  animation: comeIn-right 0.8s linear;
   animation-delay: 4s;
   animation-fill-mode: forwards;
 }
@@ -37,9 +37,37 @@
   animation-fill-mode: forwards;
 }
 
+.message-row:nth-child(8) {
+  visibility: hidden;
+  animation: comeIn-left 0.8s linear;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+.message-row:nth-child(9) {
+  visibility: hidden;
+  animation: comeIn-left 0.8s linear;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+
+.message-row:nth-child(10) {
+  visibility: hidden;
+  animation: comeIn-left 0.8s linear;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+.message-row:nth-child(11) {
+  visibility: hidden;
+  animation: comeIn-left 0.8s linear;
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+}
+
 .message-row:last-child {
   visibility: hidden;
   animation: comeIn-right 0.8s linear;
-  animation-delay: 6s;
+  animation-delay: 10s;
   animation-fill-mode: forwards;
 }
