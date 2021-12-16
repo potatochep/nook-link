@@ -1,0 +1,30 @@
+.nav {
+  background-color: #fdf7d3f1;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__link__noti__chat {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.nav__link__noti__setting {
+  position: absolute;
+  left: 32px;
+  bottom: 21px;
+}
