@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/nook-link-style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/nook-link-style.css" />
-    <title>Friends list</title>
+    <title>Find screen</title>
   </head>
+
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
@@ -24,110 +25,152 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span class="tool">
+          <span class="tool-noti badge__sm"></span>
+          <i class="fas fa-cog fa-lg"></i>
+        </span>
       </div>
     </header>
 
-    <a id="friends-display-link" href="#">
-      <i class="fas fa-info-circle"></i>
-      Friends' Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__column-avatar-lg"
-            src="assets/너굴사진.png"
-          />
-          <div class="user-component__column-text">
-            <h4 class="user-component__column-text__name-lg">너굴</h4>
-            <!-- <h5 class="user-component__column-text__subtitle"> 
-              동물의 숲에 대한 질문은 나한테 보내주라구리
-            </h5>-->
+    <main class="main-screen main-screens__find">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <span class="icon-row__text">QR Code</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span class="icon-row__text">Add by Contacts</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span class="icon-row__text">Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span class="icon-row__text">Invite</span>
+        </div>
+      </div>
+      <div class="Recommended-youtube border-text">
+        Recommended youtube channels
+      </div>
+      <div class="Recommended-youtube__list">
+        <div class="Recommended-youbube__list-link">
+          <a href="https://www.youtube.com/watch?v=sRWjpjNVOCM">
+            <img src="assets/동숲-유튜브-1.jpeg" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=MPnIiCM9YIc">
+            <img src="assets/동숲-유튜브-2.jpeg" />
+          </a>
+        </div>
+        <div class="Recommended-youbube__list-link">
+          <a href="https://www.youtube.com/watch?v=_3YNL0OWio0">
+            <img src="assets/동숲-유튜브-3.jpeg" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=u9TY741PSh8">
+            <img src="assets/동숲-유튜브-4.jpeg" />
+          </a>
+        </div>
+      </div>
+      <div class="Open-chat border-text">
+        <span>Open Chat</span>
+        <div class="Open-chat__link">
+          Go to Open chat Home <i class="fas fa-chevron-right fa-xs"></i>
+        </div>
+      </div>
+      <div class="open-post">
+        <div class="open-post__column">
+          <h5 class="open-post__title">#NintendoLuver</h5>
+          <h6 class="open-post__hashtags">#NTD#nintendo#mario</h6>
+          <div class="open-post__members">
+            <img class="open-post__profile-img" src="assets/닌텐도.png" />
+            <span class="open-post__member-count">2000 members</span>
+            <div class="divider"></div>
+            <span class="open-post__member-status">Active</span>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="open-post__column">
+          <div class="open-post__photo">
+            <img src="assets/마리오.jpeg" />
+            <div class="open-post__heart-count">
+              <i class="fas fa-heart fa-xs"></i> <span>326</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="friends-screen__channel">
-        <span>Channel</span>
-        <i class="fas fa-chevron-up"></i>
+      <div class="open-post">
+        <div class="open-post__column">
+          <h5 class="open-post__title">Animal Crossing!</h5>
+          <h6 class="open-post__hashtags">#englishonly#purpleyou</h6>
+          <div class="open-post__members">
+            <img
+              class="open-post__profile-img"
+              src="assets/동물의숲.jpg"
+            />
+            <span class="open-post__member-count">3000 members</span>
+            <div class="divider"></div>
+            <span class="open-post__member-status">Active</span>
+          </div>
+        </div>
+        <div class="open-post__column">
+          <div class="open-post__photo">
+            <img src="assets/동물의숲.jpg" />
+            <div class="open-post__heart-count">
+              <i class="fas fa-heart fa-xs"></i> <span>1504</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="user-component">
-        <div class="user-component__column">
-          <img class="user-component__column-avatar-sm" src="assets/kk.png" />
-          <div class="user-component__column-text">
-            <h4 class="user-component__column-text__name-sm">K.K house</h4>
+      <div class="open-post">
+        <div class="open-post__column">
+          <h5 class="open-post__title">젤다같이해요!</h5>
+          <h6 class="open-post__hashtags">#zelda#야숨#bw</h6>
+          <div class="open-post__members">
+            <img
+              class="open-post__profile-img"
+              src="assets/동물의숲.jpg"
+            />
+            <span class="open-post__member-count">1200 members</span>
+            <div class="divider"></div>
+            <span class="open-post__member-status">Active</span>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__column-music">
-            K.K house - 나비보벳따우
-          </span>
+        <div class="open-post__column">
+          <div class="open-post__photo">
+            <img src="assets/젤다야숨.png" />
+            <div class="open-post__heart-count">
+              <i class="fas fa-heart fa-xs"></i> <span>400</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__column-avatar-sm"
-            src="assets/여울이.png"
-          />
-          <div class="user-component__column-text">
-            <h4 class="user-component__column-text__name-sm">여울</h4>
-            <h5 class="user-component__column-text__subtitle-sm">
-              동물의 숲에 대한 질문은 나한테 보내주라구리
-            </h5>
+
+      <div class="open-post">
+        <div class="open-post__column">
+          <h5 class="open-post__title">Nook Inc</h5>
+          <h6 class="open-post__hashtags">#nook#너굴#동숲</h6>
+          <div class="open-post__members">
+            <img
+              class="open-post__profile-img"
+              src="assets/동물의숲.jpg"
+            />
+            <span class="open-post__member-count">299 members</span>
+            <div class="divider"></div>
+            <span class="open-post__member-status">Active</span>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__column-music">
-            K.K house - 나비보벳따우
-          </span>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__column-avatar-sm"
-            src="assets/모리.png"
-          />
-          <div class="user-component__column-text">
-            <h4 class="user-component__column-text__name-sm">모리</h4>
-            <h5 class="user-component__column-text__subtitle-sm">
-              동물의 숲에 대한 질문은 나한테 보내주라구리
-            </h5>
+        <div class="open-post__column">
+          <div class="open-post__photo">
+            <img src="assets/nook-inc.jpg" />
+            <div class="open-post__heart-count">
+              <i class="fas fa-heart fa-xs"></i> <span>215</span>
+            </div>
           </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__column-music">
-            K.K house - 나비보벳따우
-          </span>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__column-avatar-sm"
-            src="assets/루돌이.png"
-          />
-          <div class="user-component__column-text">
-            <h4 class="user-component__column-text__name-sm">루돌</h4>
-            <h5 class="user-component__column-text__subtitle-sm">
-              동물의 숲에 대한 질문은 나한테 보내주라구리
-            </h5>
-          </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__column-music">
-            K.K house - 나비보벳따우
-          </span>
         </div>
       </div>
     </main>
@@ -136,7 +179,7 @@
       <ul class="nav__ul">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <i class="fas fa-user fa-2x"></i>
+            <i class="far fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
@@ -158,6 +201,9 @@
         </li>
       </ul>
     </nav>
+    <div id="no-mobile">
+      <span>Your screen is too big</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/b1038de99e.js"

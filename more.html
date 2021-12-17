@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/nook-link-style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/nook-link-style.css" />
-    <title>Friends list</title>
+    <title>More screen</title>
   </head>
+
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
@@ -24,110 +25,152 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span class="tool">
+          <span class="tool-noti badge__sm"></span>
+          <a href="setting.html"><i class="fas fa-cog fa-lg"></i></a>
+        </span>
       </div>
     </header>
 
-    <a id="friends-display-link" href="#">
-      <i class="fas fa-info-circle"></i>
-      Friends' Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="main-screen">
+    <main class="main-screen more-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
+            src="assets/너굴사진.png"
             class="user-component__column-avatar-lg"
-            src="assets/너굴사진.png"
           />
-          <div class="user-component__column-text">
+          <div class="user-component__text">
             <h4 class="user-component__column-text__name-lg">너굴</h4>
-            <!-- <h5 class="user-component__column-text__subtitle"> 
-              동물의 숲에 대한 질문은 나한테 보내주라구리
-            </h5>-->
+            <h6 class="user-component__column-text__subtitle">
+              + 1 787 493 4219 <i class="fas fa-exclamation"></i>
+            </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
+
+        <div class="user-component__column">
+          <i class="far fa-comment-alt fa-2x"></i>
+        </div>
       </div>
 
-      <div class="friends-screen__channel">
-        <span>Channel</span>
-        <i class="fas fa-chevron-up"></i>
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="far fa-calendar"></i>
+          <span class="icon-row__text">Calendar</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-smile-beam"></i>
+          <span class="icon-row__text">Eniticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-paint-roller"></i>
+          <span class="icon-row__text">Themes</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-file-invoice-dollar"></i>
+          <span class="icon-row__text">Acount</span>
+        </div>
       </div>
 
-      <div class="user-component">
-        <div class="user-component__column">
-          <img class="user-component__column-avatar-sm" src="assets/kk.png" />
-          <div class="user-component__column-text">
-            <h4 class="user-component__column-text__name-sm">K.K house</h4>
+      <div class="more-apps">
+        <h4 class="more-apps__title">Apps</h4>
+        <div class="more-apps__icons">
+          <div class="more-apps__icon">
+            <a href="https://www.amazon.com/" target="blank">
+              <div class="more-apps__icon-img">
+                <img
+                  src="assets/animal-crossing-app-icons-wallpapers-clan-com/Icons/Amazon.png"
+                />
+              </div>
+              <span class="more-apps__icon-text"> Amazon</span>
+            </a>
+          </div>
+
+          <div class="more-apps__icon">
+            <div class="more-apps__icon-img">
+              <img
+                src="assets/animal-crossing-app-icons-wallpapers-clan-com/Icons/App-Store.png"
+              />
+            </div>
+            <span class="more-apps__icon-text"> App store</span>
+          </div>
+
+          <div class="more-apps__icon">
+            <div class="more-apps__icon-img">
+              <img
+                src="assets/animal-crossing-app-icons-wallpapers-clan-com/Icons/Camera.png"
+              />
+            </div>
+            <span class="more-apps__icon-text"> Camera</span>
+          </div>
+
+          <div class="more-apps__icon">
+            <div class="more-apps__icon-img">
+              <img
+                src="assets/animal-crossing-app-icons-wallpapers-clan-com/Icons/Contacts.png"
+              />
+            </div>
+            <span class="more-apps__icon-text"> Contacts</span>
+          </div>
+
+          <div class="more-apps__icon">
+            <div class="more-apps__icon-img">
+              <img
+                src="assets/animal-crossing-app-icons-wallpapers-clan-com/Icons/Facetime.png"
+              />
+            </div>
+            <span class="more-apps__icon-text"> Facetime</span>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__column-music">
-            K.K house - 나비보벳따우
-          </span>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__column-avatar-sm"
-            src="assets/여울이.png"
-          />
-          <div class="user-component__column-text">
-            <h4 class="user-component__column-text__name-sm">여울</h4>
-            <h5 class="user-component__column-text__subtitle-sm">
-              동물의 숲에 대한 질문은 나한테 보내주라구리
-            </h5>
+
+        <div class="more-apps__icons">
+          <div class="more-apps__icon">
+            <div class="more-apps__icon-img">
+              <img
+                src="assets/animal-crossing-app-icons-wallpapers-clan-com/Icons/Files.png"
+              />
+            </div>
+            <span class="more-apps__icon-text"> Files</span>
           </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__column-music">
-            K.K house - 나비보벳따우
-          </span>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__column-avatar-sm"
-            src="assets/모리.png"
-          />
-          <div class="user-component__column-text">
-            <h4 class="user-component__column-text__name-sm">모리</h4>
-            <h5 class="user-component__column-text__subtitle-sm">
-              동물의 숲에 대한 질문은 나한테 보내주라구리
-            </h5>
+
+          <div class="more-apps__icon">
+            <div class="more-apps__icon-img">
+              <img
+                src="assets/animal-crossing-app-icons-wallpapers-clan-com/Icons/Clock.png"
+              />
+            </div>
+            <span class="more-apps__icon-text"> Clock</span>
           </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__column-music">
-            K.K house - 나비보벳따우
-          </span>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__column-avatar-sm"
-            src="assets/루돌이.png"
-          />
-          <div class="user-component__column-text">
-            <h4 class="user-component__column-text__name-sm">루돌</h4>
-            <h5 class="user-component__column-text__subtitle-sm">
-              동물의 숲에 대한 질문은 나한테 보내주라구리
-            </h5>
+
+          <div class="more-apps__icon">
+            <div class="more-apps__icon-img">
+              <img
+                src="assets/animal-crossing-app-icons-wallpapers-clan-com/Icons/Gmail.png"
+              />
+            </div>
+            <span class="more-apps__icon-text"> Gmail</span>
           </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__column-music">
-            K.K house - 나비보벳따우
-          </span>
+
+          <div class="more-apps__icon">
+            <div class="more-apps__icon-img">
+              <img
+                src="assets/animal-crossing-app-icons-wallpapers-clan-com/Icons/Facebook.png"
+              />
+            </div>
+            <span class="more-apps__icon-text"> Facebook</span>
+          </div>
+
+          <div class="more-apps__icon">
+            <div class="more-apps__icon-img">
+              <img
+                src="assets/animal-crossing-app-icons-wallpapers-clan-com/Icons/Health.png"
+              />
+            </div>
+            <span class="more-apps__icon-text"> Health</span>
+          </div>
         </div>
       </div>
     </main>
@@ -136,7 +179,7 @@
       <ul class="nav__ul">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <i class="fas fa-user fa-2x"></i>
+            <i class="far fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
@@ -158,6 +201,9 @@
         </li>
       </ul>
     </nav>
+    <div id="no-mobile">
+      <span>Your screen is too big</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/b1038de99e.js"
