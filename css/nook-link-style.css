@@ -10,7 +10,9 @@
 @import "components/alt-screen-header.css";
 @import "components/icon-row.css";
 @import "components/tool.css";
-@import "components/no-mobile.css"; /* screens */
+@import "components/no-mobile.css";
+@import "components/search-bar.css";
+/* screens */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/chatting.css";
