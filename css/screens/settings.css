@@ -7,6 +7,10 @@
   justify-content: space-between;
 }
 
+.settings__setting:nth-child(3) {
+  border-bottom: 1px solid rgba(61, 56, 56, 0.1);
+}
+
 .settings__setting i {
   margin-right: 20px;
   font-size: 20px;
@@ -14,4 +18,8 @@
 }
 .settings__setting-column:last-child {
   opacity: 0.5;
+}
+
+.settings__setting-sub {
+  margin-top: 20px;
 }
