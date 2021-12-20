@@ -1,4 +1,4 @@
-#no-mobile {
+#too-bgsm-size {
   position: absolute;
   z-index: 99;
   height: 100vh;
@@ -11,8 +11,8 @@
   font-size: 32px;
 }
 
-@media screen and (max-width: 600px) and (orientation: portrait) {
-  #no-mobile {
+@media (max-width: 600px) and (min-height: 1000px) {
+  #too-bgsm-size {
     display: none;
   }
 }

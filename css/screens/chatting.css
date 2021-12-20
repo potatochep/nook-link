@@ -1,6 +1,6 @@
 #chatting-screen {
   background-color: var(--background__color);
-  height: 1000vh;
+  height: 200vh;
 }
 
 #chatting-screen .alt-header,
@@ -17,17 +17,6 @@
 
 #chatting-screen .status-bar {
   z-index: 2;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
 }
 
 @keyframes comeIn-left {
@@ -100,6 +89,21 @@
   border-top-left-radius: 0px;
   margin-right: 5px;
   font-size: 18px;
+}
+
+.message-info iframe {
+  margin-right: 7px;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+}
+
+.message-info__img {
+  width: 300px;
+  margin-right: 7px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
 }
 
 .message-time {
@@ -202,15 +206,4 @@
 
 .typing:focus-within {
   transform: translateY(80px);
-}
-
-.message-info iframe {
-  margin-right: 7px;
-}
-
-.message-info__img {
-  width: 300px;
-  margin-right: 7px;
-  border-radius: 20px;
-  border-top-left-radius: 0px;
 }
